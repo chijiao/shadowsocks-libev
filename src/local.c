@@ -46,6 +46,8 @@
 #define BUF_SIZE 512
 #endif
 
+jconf_t *g_conf = NULL;
+
 int verbose = 0;
 int udprelay = 0;
 
@@ -171,7 +173,23 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
     // local socks5 server
     if (server->stage == 5)
     {
-        remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
+        // changed by henryshen
+        //
+        // add 6 bits 
+        char* local_buf=malloc(BUF_SIZE+6);
+        strncpy(local_buf, g_conf->username, 6);
+        memcpy(local_buf+6, remote->buf, BUF_SIZE);
+#ifdef DEBUG
+        printf("local_buf: %s \n", local_buf);
+#endif
+        r+=6;
+        remote->buf = ss_encrypt(BUF_SIZE, local_buf, &r, server->e_ctx);
+#ifdef DEBUG
+        printf("remote_buf: %s \n", remote->buf);
+#endif
+        // end
+
+        //remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
         if (remote->buf == NULL)
         {
             LOGE("invalid password or cipher");
@@ -806,6 +824,7 @@ int main (int argc, char **argv)
     char *pid_path = NULL;
     char *conf_path = NULL;
     char *iface = NULL;
+    char *username = NULL;
 
     int remote_num = 0;
     ss_addr_t remote_addr[MAX_REMOTE_NUM];
@@ -870,6 +889,8 @@ int main (int argc, char **argv)
     if (conf_path != NULL)
     {
         jconf_t *conf = read_jconf(conf_path);
+        // add
+        g_conf = conf;
         if (remote_num == 0)
         {
             remote_num = conf->remote_num;
@@ -884,6 +905,12 @@ int main (int argc, char **argv)
         if (password == NULL) password = conf->password;
         if (method == NULL) method = conf->method;
         if (timeout == NULL) timeout = conf->timeout;
+        // add
+        if (username == NULL) username = conf->username;
+#ifdef DEBUG
+        printf("username is: %s\n", username);
+#endif
+        
     }
 
     if (remote_num == 0 || remote_port == NULL ||

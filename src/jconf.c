@@ -157,6 +157,10 @@ jconf_t *read_jconf(const char* file)
             {
                 conf.timeout = to_string(value);
             }
+            else if (strcmp(name, "username") == 0)
+            {
+                conf.username = to_string(value);
+            }
         }
     }
     else

@@ -22,6 +22,7 @@ typedef struct
     char *password;
     char *method;
     char *timeout;
+    char *username;
 } jconf_t;
 
 jconf_t *read_jconf(const char* file);
