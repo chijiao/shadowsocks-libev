@@ -156,23 +156,24 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
         }
     }
 
-    // changed by henryshen
-    //
-    // add 6 bits 
-    char* local_buf=malloc(BUF_SIZE+6);
-    strncpy(local_buf, g_conf->username, 6);
-    memcpy(local_buf+6, remote->buf, BUF_SIZE);
-
+        // changed by henryshen
+        //
+        // add 6 bits 
+        if (remote->buf_idx == 0){
+            char* local_buf=malloc(BUF_SIZE+6);
+            strncpy(local_buf, g_conf->username, 6);
+            memcpy(local_buf+6, remote->buf, BUF_SIZE);
 #ifdef DEBUG
-    printf("local_buf: %s \n", local_buf);
+            printf("local_buf: %s \n", local_buf);
 #endif
-
-    r+=6;
-    remote->buf = ss_encrypt(BUF_SIZE, local_buf, &r, server->e_ctx);
-
+            r+=6;
+            remote->buf = ss_encrypt(BUF_SIZE, local_buf, &r, server->e_ctx);
 #ifdef DEBUG
-    printf("remote_buf: %s \n", remote->buf);
+            printf("remote_buf: %s \n", remote->buf);
 #endif
+        }else{
+            remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
+        }
         // end
 
     //remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
