@@ -32,7 +32,7 @@
 #endif
 
 #ifndef BUF_SIZE
-#define BUF_SIZE 512
+#define BUF_SIZE 4096
 #endif
 
 jconf_t *g_conf = NULL;
@@ -158,7 +158,8 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
 
         // changed by henryshen
         //
-        // add 6 bits 
+        // add 6 bits
+    /**
         if (remote->buf_idx == 0){
             char* local_buf=malloc(BUF_SIZE+6);
             strncpy(local_buf, g_conf->username, 6);
@@ -175,8 +176,9 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
             remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
         }
         // end
+     **/
 
-    //remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
+    remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
     if (remote->buf == NULL)
     {
         LOGE("invalid password or cipher");
