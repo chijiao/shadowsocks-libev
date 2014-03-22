@@ -43,7 +43,7 @@
 #endif
 
 #ifndef BUF_SIZE
-#define BUF_SIZE 512
+#define BUF_SIZE 4096
 #endif
 
 jconf_t *g_conf = NULL;
@@ -127,6 +127,7 @@ int create_and_bind(const char *addr, const char *port)
     return listen_sock;
 }
 
+// 接受数据的回调函数
 static void server_recv_cb (EV_P_ ev_io *w, int revents)
 {
     struct server_ctx *server_recv_ctx = (struct server_ctx *)w;
@@ -138,7 +139,7 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
         close_and_free_server(EV_A_ server);
         return;
     }
-
+    // 获取接受的数据
     ssize_t r = recv(server->fd, remote->buf, BUF_SIZE, 0);
 
     if (r == 0)
@@ -175,7 +176,9 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
     {
         // changed by henryshen
         //
-        // add 6 bits 
+        // add 6 bits
+        /**
+        printf("start is :%d\n", (int)remote->buf_idx);
         if (remote->buf_idx == 0){
             char* local_buf=malloc(BUF_SIZE+6);
             strncpy(local_buf, g_conf->username, 6);
@@ -184,16 +187,19 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
             printf("local_buf: %s \n", local_buf);
 #endif
             r+=6;
+            printf("recive :%d\n", (int)r);
             remote->buf = ss_encrypt(BUF_SIZE, local_buf, &r, server->e_ctx);
 #ifdef DEBUG
             printf("remote_buf: %s \n", remote->buf);
 #endif
         }else{
+            printf("length is not 0  ---------------------------------------\n");
             remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
         }
         //end
+         **/
 
-        //remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
+        remote->buf = ss_encrypt(BUF_SIZE, remote->buf, &r, server->e_ctx);
         if (remote->buf == NULL)
         {
             LOGE("invalid password or cipher");
@@ -201,7 +207,15 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
             close_and_free_server(EV_A_ server);
             return;
         }
+
+        // 将接受的数据加密后发生到远端
         int s = send(remote->fd, remote->buf, r, 0);
+        printf("send :%d\n", (int)s);
+        if ((int)s != (int)r){
+            printf("find error ---------------------------------------\n");
+        }
+
+
         if(s == -1)
         {
             if (errno == EAGAIN || errno == EWOULDBLOCK)
@@ -221,11 +235,16 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
                 return;
             }
         }
+        // 如果发送的小于应该发送的,重新发送未发送的部分
         else if(s < r)
         {
             remote->buf_len = r - s;
             remote->buf_idx = s;
+            
+            // 再次打印调试
+            printf("retry ------------\n");
             ev_io_stop(EV_A_ &server_recv_ctx->io);
+            // 异步发送
             ev_io_start(EV_A_ &remote->send_ctx->io);
             return;
         }

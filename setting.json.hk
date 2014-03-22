@@ -1,5 +1,5 @@
 {
-    "server":"172.16.1.39",
+    "server":"hk.hideus.net",
     "server_port":8282,
     "local_port": 8080,
     "timeout":600,
