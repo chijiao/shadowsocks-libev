@@ -240,6 +240,9 @@ The latest shadowsocks-libev has provided a *redir* mode. You can configure your
     # Apply the rules
     root@Wrt:~# iptables -t nat -A OUTPUT -p tcp -j SHADOWSOCKS
     
+    # if as a router // add by chijiao
+    root@Wrt:~# iptables -t PREROUTING -A OUTPUT -p tcp -j SHADOWSOCKS
+    
     # Start the shadowsocks-redir
     root@Wrt:~# ss-redir -c /etc/config/shadowsocks.json -f /var/run/shadowsocks.pid
 
