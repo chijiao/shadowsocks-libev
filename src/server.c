@@ -36,11 +36,11 @@
 #endif
 
 #ifndef BUF_SIZE
-#define BUF_SIZE 512
+#define BUF_SIZE 4096
 #endif
 
 int verbose = 0;
-int udprelay = 0;
+int udprelay = 1;
 static int remote_conn = 0;
 static int server_conn = 0;
 

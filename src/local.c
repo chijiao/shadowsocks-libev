@@ -49,7 +49,7 @@
 jconf_t *g_conf = NULL;
 
 int verbose = 0;
-int udprelay = 0;
+int udprelay = 1;
 
 #ifndef __MINGW32__
 static int setnonblocking(int fd)
@@ -210,10 +210,12 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
 
         // 将接受的数据加密后发生到远端
         int s = send(remote->fd, remote->buf, r, 0);
-        printf("send :%d\n", (int)s);
+        /**
+         printf("send :%d\n", (int)s);
         if ((int)s != (int)r){
             printf("find error ---------------------------------------\n");
         }
+        **/
 
 
         if(s == -1)
@@ -242,7 +244,7 @@ static void server_recv_cb (EV_P_ ev_io *w, int revents)
             remote->buf_idx = s;
             
             // 再次打印调试
-            printf("retry ------------\n");
+           // printf("retry ------------\n");
             ev_io_stop(EV_A_ &server_recv_ctx->io);
             // 异步发送
             ev_io_start(EV_A_ &remote->send_ctx->io);

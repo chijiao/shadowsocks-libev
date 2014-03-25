@@ -1,0 +1,9 @@
+{
+    "server":"0.0.0.0",
+    "server_port":8282,
+    "local_port": 8080,
+    "timeout":600,
+    "method":"aes-256-cfb",
+    "password":"123456",
+    "username":"abcdef"
+}
