@@ -1,0 +1,62 @@
+#!/bin/sh /etc/rc.common
+
+
+START=50
+
+run_init()
+{
+    local enable
+    config_get_bool enable $1 enable
+    
+    if [ $enable -eq "1" ]; then
+        local speed_type
+        local email
+        local mobile
+        local sn
+        
+        config_get speed_type $1 speed_type
+        config_get email $1 email
+        config_get mobile $1 mobile
+        config_get sn $1 sn
+
+        /usr/bin/curl --connect-timeout 20 -s -d "speed_type=$speed_type&sn=$sn&email=$email&mobile=$mobile&do=start" \
+        http://ss-login.hideus.net/super-route/php/server/index.php > /tmp/result_start.tar.gz
+        result=`ls /tmp/result_start.tar.gz  -l | awk '{print $5}'`
+        if [ $result -lt 256 ]; then
+            config_set register $1 0
+            exit 0
+        fi
+        cd /tmp
+        rm -rf /tmp/cfg
+        tar xzf /tmp/result_start.tar.gz
+        /usr/bin/ss-redir -c /tmp/cfg/ss-redir.cfg -f /tmp/ss-redir.pid
+        sh /tmp/cfg/ss-redir-iptables-start.sh
+        dnsmasq=`grep "conf-file=/tmp/cfg/domain.conf" /etc/dnsmasq.conf | wc -l`
+        if [ $dnsmasq -eq 0 ]; then
+            echo "conf-file=/tmp/cfg/domain.conf" >> /etc/dnsmasq.conf
+            /etc/init.d/dnsmasq restart
+        fi   
+        echo "accelerate started"
+
+    fi
+    
+}
+
+start()
+{
+    config_load superspeed
+    config_foreach run_init main
+}
+
+stop()
+{
+    kill `cat /tmp/ss-redir.pid`
+    sh /tmp/cfg/ss-redir-iptables-stop.sh
+    echo "accelerate stoped"
+}
+
+restart()
+{
+    stop
+    start
+}

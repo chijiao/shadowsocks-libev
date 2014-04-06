@@ -1,0 +1,9 @@
+config main
+    option enable 1
+    option speed_type 100
+    option email user@test.com
+    option mobile 13453123456
+    option sn 123456
+    option overdue 20140603
+    option register 0
+
