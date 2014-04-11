@@ -56,10 +56,12 @@ endif
 
 define Package/shadowsocks-libev/install
 	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_CONF) ./files/shadowsocks.json $(1)/etc
-	$(INSTALL_BIN) ./files/shadowsocks.init $(1)/etc/init.d/shadowsocks
+	$(INSTALL_CONF) ./files/conf/superspeed $(1)/etc/config/
+	$(INSTALL_CONF) ./files/conf/speedtype.conf $(1)/etc/superspeed/
+	$(INSTALL_BIN) ./files/init.d/superspeed $(1)/etc/init.d/superspeed
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-{local,redir,tunnel} $(1)/usr/bin
+	$(INSTALL_BIN) ./files/bin/cron_check_status.sh $(1)/usr/bin/supserspeed
 endef
 
 Package/shadowsocks-libev-polarssl/install=$(Package/shadowsocks-libev/install)
