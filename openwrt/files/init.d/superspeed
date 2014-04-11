@@ -13,34 +13,60 @@ run_init()
         local email
         local mobile
         local sn
+        local now=$(date +"%Y-%m-%d %H:%M:%S")
         
         config_get speed_type $1 speed_type
         config_get email $1 email
         config_get mobile $1 mobile
         config_get sn $1 sn
 
-        /usr/bin/curl --connect-timeout 20 -s -d "speed_type=$speed_type&sn=$sn&email=$email&mobile=$mobile&do=start" \
-        http://ss-login.hideus.net/super-route/php/server/index.php > /tmp/result_start.tar.gz
+        # check running status
+        local running_status
+        running_status=$(uci get superspeed.userinfo.connect_status)
+        if [ $running_status -eq "1" ]; then
+            stop
+        fi
+
+        # login server
+        logger -t superspeed -s "start login server " > /dev/null 2>&1
+        /usr/bin/curl -k --connect-timeout 20 -s -d "speed_type=$speed_type&sn=$sn&email=$email&mobile=$mobile&do=start" \
+        https://ss-login.hideus.net/index.php > /tmp/result_start.tar.gz
         result=`ls /tmp/result_start.tar.gz  -l | awk '{print $5}'`
         if [ $result -lt 256 ]; then
-            config_set register $1 0
+            logger -t superspeed -s "login failed, maybe sn invalid" > /dev/null 2>&1
+            local expired=$(uci set superspeed.userinfo.expired=1)
+            if [ $expired -eq "1" ]; then
+                uci set superspeed.userinfo.expired=0
+                uci commit superspeed
+            fi
             exit 0
         fi
+
+        logger -t superspeed -s "login successful, start superspeed service" > /dev/null 2>&1
+
+        # update expired=1, user can use
+        uci set superspeed.userinfo.expired=1
+        uci commit superspeed
+
         cd /tmp
         rm -rf /tmp/cfg
         tar xzf /tmp/result_start.tar.gz
         /usr/bin/ss-redir -c /tmp/cfg/ss-redir.cfg -f /tmp/ss-redir.pid
         sh /tmp/cfg/ss-redir-iptables-start.sh
-        dnsmasq=`grep "conf-file=/tmp/cfg/domain.conf" /etc/dnsmasq.conf | wc -l`
-        if [ $dnsmasq -eq 0 ]; then
-            echo "conf-file=/tmp/cfg/domain.conf" >> /etc/dnsmasq.conf
-            /etc/init.d/dnsmasq restart
-        fi   
+        cp -rf /tmp/cfg/domain.conf /etc/dnsmasq.conf
+        /etc/init.d/dnsmasq reload
+        logger -t superspeed -s "accelerate started"  > /dev/null 2>&1
         echo "accelerate started"
 
+        # update status
+        uci set superspeed.userinfo.connect_status=1
+        uci set superspeed.userinfo.conncet_time="$now"
+        uci commit superspeed
     fi
     
 }
+
+
 
 start()
 {
@@ -50,8 +76,23 @@ start()
 
 stop()
 {
-    kill `cat /tmp/ss-redir.pid`
-    sh /tmp/cfg/ss-redir-iptables-stop.sh
+    logger -t superspeed -s "stop accelerate"  > /dev/null 2>&1
+    ps > /tmp/ps
+    kill -9 `cat /tmp/ps | grep ss-redir | awk '{print $1}'` > /dev/null 2>&1
+    if [ -f /tmp/ss-redir.pid ]; then
+        sh /tmp/cfg/ss-redir-iptables-stop.sh
+        rm -rf /tmp/ss-redir.pid
+    fi
+    rm -rf /etc/dnsmasq.conf
+    # update config
+    local running_status
+    running_status=$(uci get superspeed.userinfo.connect_status)
+    if [ $running_status -eq "1" ]; then
+        uci set superspeed.userinfo.connect_status=0
+        uci set superspeed.userinfo.conncet_time=0
+        uci commit superspeed
+    fi
+    logger -t superspeed -s "accelerate stoped"  > /dev/null 2>&1
     echo "accelerate stoped"
 }
 

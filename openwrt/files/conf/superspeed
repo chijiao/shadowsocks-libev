@@ -1,9 +1,15 @@
-config main
-    option enable 1
-    option speed_type 100
-    option email user@test.com
-    option mobile 13453123456
-    option sn 123456
-    option overdue 20140603
-    option register 0
-
+config main userinfo
+    option register '1'
+    option traffic '0'
+    option registertime '2014-11-11 10:11:11'
+    option billingtime '2014-11-11 11:11:11'
+    option expiredtime '2014-11-11 11:11:11'
+    option expired '0'
+    option sn '234534'
+    option mobile '13411112222'
+    option email 'test@qqq.com'
+    option enable '1'
+    option speed_type '100'
+    option connect_time ''
+    option connect_stauts '0'
+    option pay_url 'https://ss-pay.hideus.net'

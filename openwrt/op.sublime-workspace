@@ -1,0 +1,644 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"su",
+				"superspeed"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"us",
+				"usage"
+			],
+			[
+				"get",
+				"get_status_from_server"
+			],
+			[
+				"run",
+				"running_status"
+			],
+			[
+				"con",
+				"connect_status"
+			],
+			[
+				"pi",
+				"pid_file"
+			],
+			[
+				"ex",
+				"expired"
+			],
+			[
+				"re",
+				"registertime"
+			],
+			[
+				"stau",
+				"status_code"
+			],
+			[
+				"s",
+				"status_code"
+			],
+			[
+				"u",
+				"userinfo"
+			],
+			[
+				"sp",
+				"superspeed"
+			],
+			[
+				"ms",
+				"message"
+			],
+			[
+				"start",
+				"start_log"
+			],
+			[
+				"resu",
+				"result_start"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"se",
+				"send"
+			],
+			[
+				"int",
+				"int"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"g",
+				"g_conf"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"ser",
+				"SERVERID"
+			],
+			[
+				"all",
+				"all_domain_cdn"
+			],
+			[
+				"cit",
+				"city"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"pr",
+				"province"
+			],
+			[
+				"ip",
+				"ipinfo"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"w",
+				"wildcard"
+			],
+			[
+				"fget",
+				"fgets"
+			],
+			[
+				"cr",
+				"CREATEDBSQL"
+			],
+			[
+				"dom",
+				"domainname"
+			],
+			[
+				"dns",
+				"dnsapi"
+			],
+			[
+				"app",
+				"appname"
+			],
+			[
+				"my",
+				"mysqlpass"
+			],
+			[
+				"ba",
+				"bandwidthquota"
+			],
+			[
+				"tr",
+				"traffic_quota"
+			],
+			[
+				"f",
+				"FILESIZE"
+			],
+			[
+				"js",
+				"json_config"
+			],
+			[
+				"json",
+				"json_config"
+			],
+			[
+				"j",
+				"json_config"
+			],
+			[
+				"sql",
+				"sql"
+			],
+			[
+				"wp",
+				"wp_pass"
+			],
+			[
+				"sq",
+				"SQL2"
+			],
+			[
+				"db",
+				"DB_NAME"
+			],
+			[
+				"wp-",
+				"WP-ADMIN-PASS"
+			],
+			[
+				"fil",
+				"FILENAME"
+			],
+			[
+				"we",
+				"WEB_ROOT"
+			],
+			[
+				"web",
+				"WEBROOT"
+			],
+			[
+				"ho",
+				"HOST_NAME"
+			],
+			[
+				"A",
+				"APP_NAME"
+			],
+			[
+				"h",
+				"HOSTNAME"
+			],
+			[
+				"We",
+				"WEBROOT"
+			],
+			[
+				"cou",
+				"current_count"
+			],
+			[
+				"a-z",
+				"a-zA-Z0-9"
+			],
+			[
+				"fi",
+				"filename"
+			],
+			[
+				"do_",
+				"do_put"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"x",
+				"x86_64"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"mkt",
+				"MKTORRENT"
+			],
+			[
+				"p",
+				"path"
+			],
+			[
+				"create",
+				"create_torrent"
+			],
+			[
+				"debu",
+				"DEBUG"
+			],
+			[
+				"sav",
+				"saved_torrent"
+			],
+			[
+				"temp",
+				"TEMPPATH"
+			],
+			[
+				"an",
+				"ANNOUNCE"
+			],
+			[
+				"b",
+				"base_dir"
+			],
+			[
+				"pa",
+				"pad_up"
+			],
+			[
+				"to",
+				"to_num"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"packag",
+				"Package Control: Disable Package"
+			],
+			[
+				"regis",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"settin",
+				"Preferences: Settings - Default"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"Snippet:",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/openwrt/files/conf/superspeed",
+		"/Users/apple/kuaipan/code/test/sftp-config.json",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/openwrt/files/init.d/superspeed",
+		"/Users/apple/kuaipan/code/test/001.sh",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/openwrt/Makefile",
+		"/Users/apple/kuaipan/code/test/001",
+		"/Users/apple/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/op-x86",
+		"/Users/apple/kuaipan/开发项目/cdn/p2p/check_node_status.sh",
+		"/Users/apple/kuaipan/开发项目/cdn/p2p/config.php",
+		"/Users/apple/kuaipan/开发项目/cdn/p2p/cron_rsync_check.php",
+		"/Users/apple/kuaipan/code/trunk/php/super-route/shell/superspeed",
+		"/Users/apple/kuaipan/code/trunk/php/super-route/config/superspeed.txt",
+		"/Users/apple/Downloads/mt7620_wifi2716_all_dpa_20130426/rt2860v2_sta/Makefile",
+		"/Users/apple/kuaipan/code/trunk/php/super-route/shell/superspeed.sh",
+		"/Users/apple/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/op-dev",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/README.md",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/configure",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/install-sh",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/rpm/SOURCES/etc/shadowsocks/redir.json",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/rpm/SOURCES/etc/init.d/shadowsocks",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/debian/shadowsocks.init",
+		"/Users/apple/kuaipan/我的资料/iptables配置文件/phone.hide.txt",
+		"/Users/apple/Downloads/未命名文件夹/jkakxvld/Taiwan-hs.ovpn",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/ovpn_template/windows_linux.conf.tpl",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/ovpn_template/ta.key",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/download.php",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/whmcs/templates/portal/clientareadetailslinks.tpl",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/whmcs/templates/portal/clientareadetails.tpl",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/whmcs/templates/portal/clientareahome.tpl",
+		"/Users/apple/kuaipan/code/trunk/php/whmcs53/whmcs/templates/portal/header.tpl",
+		"/Users/apple/kuaipan/code/trunk/php/hideus_source_code/img.php",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/src/utils.h",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/src/Makefile",
+		"/Users/apple/kuaipan/code/trunk/c/shadowsocks-libev/src/local.h",
+		"/Users/apple/kuaipan/code/trunk/php/xeon/index.html",
+		"/Users/apple/kuaipan/code/trunk/php/xeon/phone.php",
+		"/Users/apple/kuaipan/code/trunk/php/xeon/css/main.css",
+		"/Users/apple/kuaipan/code/trunk/php/xeon/js/main.js",
+		"/Users/apple/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/apple/Documents/ren.txt",
+		"/Users/apple/Documents/大家庭.txt",
+		"/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2",
+		"/Users/apple/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/apple/Library/Application Support/Sublime Text 2/Installed Packages/Package Control.sublime-package",
+		"/Users/apple/kuaipan/openwrt/dnsmasq.conf",
+		"/Users/apple/Downloads/proxy.pac",
+		"/Users/apple/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/apple/random.js",
+		"/Users/apple/Desktop/xialong.visc/config.conf",
+		"/Users/apple/test.txt",
+		"/Users/apple/send.php",
+		"/Users/apple/content.txt",
+		"/Users/apple/no.txt",
+		"/Users/apple/Desktop/cookie",
+		"/Users/apple/Downloads/osa/ctrlphp/controllers/panel.php",
+		"/Users/apple/Downloads/osa/ctrlphp/include/osa_controllers.class.php",
+		"/Users/apple/Downloads/osa/ctrlphp/index.php",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/evpn架构.txt",
+		"/Users/apple/code/php/cdn/cdn系统设计.txt",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_footer.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_location_proxy.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/conf.d/proxy.conf.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_header.erb",
+		"/Users/apple/code/php/cdn/puppet/sites.txt.bak.txt",
+		"/Users/apple/code/php/cdn/puppet/sites.txt",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/conf.d/proxy.vhost.conf.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/conf.d/proxy.setting.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_location_stub_status.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_ssl_header.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_location_alias.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/templates/vhost/vhost_location_directory.erb",
+		"/Users/apple/code/php/cdn/puppet/puppet-nginx/manifests/resource/location.pp",
+		"/Users/apple/code/php/cdn/henry/config/nginx.conf",
+		"/Users/apple/code/php/cdn/henry/config/named/test.com.zone",
+		"/Users/apple/code/php/cdn/henry/config/named/test.com.cnuni.zone",
+		"/Users/apple/code/php/cdn/henry/config/zone/dianx/netacc.tk.zone",
+		"/Users/apple/code/php/cdn/henry/config/named.rfc1912.zones",
+		"/Users/apple/code/php/cdn/henry/config/zone/netacc.tk.zone",
+		"/Users/apple/bind/ip2addr.php",
+		"/Users/apple/bind/ip.php",
+		"/Users/apple/bind/china.ip.txt",
+		"/Users/apple/bind/convert.php",
+		"/Users/apple/ip.php",
+		"/Users/apple/Documents/一些技术性的文章/lamp vhost 配置文档.txt",
+		"/Users/apple/Documents/一些技术性的文章/深圳lamp环境/webapp.sh",
+		"/Users/apple/Documents/一些技术性的文章/深圳lamp环境/深圳 lamp 文档.txt",
+		"/Users/apple/Downloads/ddd.itermcolors",
+		"/Users/apple/Documents/一些技术性的文章/smartos/base.json",
+		"/Users/apple/Documents/一些技术性的文章/benmach",
+		"/Users/apple/code/php/wordpress/wp-config.php",
+		"/Users/apple/Downloads/us.hideus.net 2/us.hideus.net.ovpn",
+		"/Users/apple/code/php/vpn01/lang/en.php",
+		"/Users/apple/code/php/vpn01/lang/zh_cn.php",
+		"/Users/apple/Documents/会议记录000.txt",
+		"/Users/apple/code/python/vfos/lamp.py",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/site.pp",
+		"/Users/apple/code/python/vfos/config.json",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/lighttpd/manifests/absent.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/puppet-yum/manifests/init.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/lighttpd/manifests/conf.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/openvpn/templates/server.gw.conf.erb",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/openvpn/templates/server.p2p.conf.erb",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/openvpn/files/conf/radius.server.conf",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/lighttpd/files/lighttpd.conf",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/lighttpd/manifests/init.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/lighttpd/manifests/params.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/openvpn/spec/classes/openvpn_spec.rb",
+		"/Users/apple/Downloads/puppet/manifests/site.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/hideus/manifests/yum.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/hideus/manifests/init.pp",
+		"/Users/apple/Downloads/puppet/manifests/roles.pp",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/openvpn/radiusplugin.server.p2p.cnf",
+		"/Users/apple/Documents/一些技术性的文章/hideus.net vpn 安装文档/puppet脚本/openvpn/server.gw.conf.erb",
+		"/Users/apple/puppet/moudules/test/manifests/init.pp",
+		"/Users/apple/Downloads/puppet/manifests/modules.pp",
+		"/Users/apple/Downloads/puppet/modules/mysql-server/manifests/init.pp",
+		"/Users/apple/Downloads/puppet/manifests/nodes/mysql.pp",
+		"/Users/apple/Downloads/puppet/modules/bind/manifests/init.pp",
+		"/Users/apple/Downloads/puppet/puppet.conf",
+		"/Users/apple/Downloads/puppet/fileserver.conf",
+		"/Users/apple/Downloads/puppet/tagmail.conf",
+		"/Users/apple/code/php/vpn01/mailer/register_en.txt",
+		"/Users/apple/code/php/vpn01/mailer/invite.txt",
+		"/Users/apple/Desktop/SparkLabs.Viscosity.v1.4.2.Multilingual.MacOSX.Incl.Keymaker-CORE/CORE.NFO",
+		"/Users/apple/Desktop/tonl/www.tonl.net/Article.asp-ID=1.htm",
+		"/Users/apple/ros.py",
+		"/Users/apple/code/php/vpn01/ping.php",
+		"/Users/apple/Desktop/淫女大家庭.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getcwd",
+			"        \n",
+			"commit",
+			"uci",
+			"echo",
+			"type=\"submit\" ",
+			"ss_encrypt",
+			"encrypt",
+			"/*",
+			"password",
+			"encrypt",
+			"3342 3032",
+			"open",
+			"1053",
+			"127.0.0.1",
+			"vport",
+			"purg",
+			"route",
+			"VPNGW",
+			">^",
+			"<",
+			"^2",
+			"^1",
+			"#!/bin/bash\n\necho \"# --------------------\"\necho \"# Start install\"\necho \"# --------------------\"\n\nif [ $# -le 0 ];then\n	echo \"ERROR: Must input serverid\"\n	echo \"./install 103\"\n	exit\nfi\n\nSERVERID=$1\n\n\n# remove something before install\nrpm -e openswan pptpd epel-release rpmforge-release\nyum clean all\nyum remove xl2tpd openvpn lighttpd lighttpd-fastcgi unzip gmp -y\n\nETH0=`ifconfig eth0 | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`\nfor each in /proc/sys/net/ipv4/conf/*; do echo 0 > $each/accept_redirects; echo 0 > $each/send_redirects; done\necho \"localhost\" > /proc/sys/kernel/hostname\n\n# something must be startup\necho 'echo \"localhost\" > /proc/sys/kernel/hostname' >> /etc/rc.local\necho 'for each in /proc/sys/net/ipv4/conf/*; do echo 0 > $each/accept_redirects; echo 0 > $each/send_redirects; done' >> /etc/rc.local\n\n\ncd ~\nrpm -vih http://download.fedora.redhat.com/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm\nrpm -Uhv http://apt.sw.be/redhat/el5/en/x86_64/rpmforge/RPMS/rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm\n\n\nyum install xl2tpd openvpn lighttpd lighttpd-fastcgi unzip gmp  openswan tcp_wrappers php -y\nyum remove openswan -y\n\nrpm -vih http://unxmail.googlecode.com/files/pptpd-1.3.4-1.rhel5.1.i386.rpm\nrpm -vih http://unxmail.googlecode.com/files/pptpd-1.3.4-1.rhel5.1.x86_64.rpm\nrpm -vih http://unxmail.googlecode.com/files/openswan-2.6.24-1.x86_64.rpm\nwget http://unxmail.googlecode.com/files/radiusclient.zip -O radiusclient.zip\nunzip radiusclient.zip\nrm -rf radiusclient.zip\nmv -f radiusclient /etc\n\n\n\niptables -F\niptables -t nat -F\niptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A FORWARD -p tcp --syn -i ppp+ -j TCPMSS --set-mss 1356\n\niptables -A INPUT -s 10.$SERVERID.101.0/24 -d  10.8.0.0/24 -j DROP\niptables -A INPUT -s 10.$SERVERID.102.0/24 -d  10.8.0.0/24 -j DROP\niptables -A INPUT -s 10.$SERVERID.103.0/24 -d  10.8.0.0/24 -j DROP\niptables -A INPUT -s 10.$SERVERID.101.0/24 -d  10.$SERVERID.101.1 -p tcp --dport 22 -j DROP\niptables -A INPUT -s 10.$SERVERID.102.0/24 -d  10.$SERVERID.102.1 -p tcp --dport 22 -j DROP\niptables -A INPUT -s 10.$SERVERID.103.0/24 -d  10.$SERVERID.103.1 -p tcp --dport 22 -j DROP\n\niptables -t nat -A POSTROUTING -s 10.$SERVERID.101.0/24 -j SNAT --to $ETH0\niptables -t nat -A POSTROUTING -s 10.$SERVERID.102.0/24 -j SNAT --to $ETH0\niptables -t nat -A POSTROUTING -s 10.$SERVERID.103.0/24 -j SNAT --to $ETH0\n\niptables -A FORWARD -s 10.$SERVERID.101.0/24  -m iprange --dst-range 10.$SERVERID.101.2-10.$SERVERID.101.250 -j DROP\niptables -A FORWARD -s 10.$SERVERID.102.0/24  -m iprange --dst-range 10.$SERVERID.102.2-10.$SERVERID.102.250 -j DROP\niptables -A FORWARD -s 10.$SERVERID.103.0/24  -m iprange --dst-range 10.$SERVERID.103.2-10.$SERVERID.103.250 -j DROP\niptables -A FORWARD -m iprange --src-range 10.$SERVERID.101.2-10.$SERVERID.101.250 -d 10.8.0.0/24 -j DROP\niptables -A FORWARD -m iprange --src-range 10.$SERVERID.102.2-10.$SERVERID.102.250 -d 10.8.0.0/24 -j DROP\niptables -A FORWARD -m iprange --src-range 10.$SERVERID.103.2-10.$SERVERID.103.250 -d 10.8.0.0/24 -j DROP\niptables -A FORWARD -m iprange --src-range 10.$SERVERID.101.2-10.$SERVERID.101.250 -d 10.$SERVERID.101.1 -p tcp --dport 22 -j DROP\niptables -A FORWARD -m iprange --src-range 10.$SERVERID.102.2-10.$SERVERID.102.250 -d 10.$SERVERID.102.1 -p tcp --dport 22 -j DROP\niptables -A FORWARD -m iprange --src-range 10.$SERVERID.103.2-10.$SERVERID.103.250 -d 10.$SERVERID.103.1 -p tcp --dport 22 -j DROP\n\n\n/etc/init.d/iptables save\n\n\n\n# 修改 /etc/sysctl.conf\nmv -f /etc/sysctl.conf /etc/sysctl.conf.bak\n\ncat << EOF > /etc/sysctl.conf\nnet.ipv4.ip_forward = 1\nnet.ipv4.conf.default.rp_filter = 1\nnet.ipv4.conf.default.accept_source_route = 0\nkernel.sysrq = 0\nkernel.core_uses_pid = 1\nnet.ipv4.tcp_syncookies = 1\nkernel.msgmnb = 65536\nkernel.msgmax = 65536\nkernel.shmmax = 68719476736\nkernel.shmall = 134217728\nnet.ipv4.ip_local_port_range = 1024 65536\nnet.core.rmem_max = 16777216\nnet.core.wmem_max = 16777216\nnet.ipv4.tcp_rmem = 4096 87380 16777216\nnet.ipv4.tcp_wmem = 4096 65536 16777216\nnet.ipv4.tcp_fin_timeout = 3\nnet.ipv4.tcp_tw_recycle = 1\nnet.core.netdev_max_backlog = 30000\nnet.ipv4.tcp_no_metrics_save = 1\nnet.core.somaxconn = 262144\nnet.ipv4.tcp_syncookies = 0\nnet.ipv4.tcp_max_orphans = 262144\nnet.ipv4.tcp_max_syn_backlog = 262144\nnet.ipv4.tcp_synack_retries = 2\nnet.ipv4.tcp_syn_retries = 2\nvm.swappiness = 6\nEOF\n\nsysctl -p\n\n# 修改/etc/xl2tpd/xl2tpd.conf\nmv -f /etc/xl2tpd/xl2tpd.conf /etc/xl2tpd/xl2tpd.conf.bak\n\ncat << EOF > /etc/xl2tpd/xl2tpd.conf\n[global]\nipsec saref = yes\nlisten-addr = 0.0.0.0 \n[lns default]\nip range = 10.$SERVERID.102.10-10.$SERVERID.102.250\nlocal ip = 10.$SERVERID.102.1\nrefuse chap = yes\nrefuse pap = yes\nrequire authentication = yes\nppp debug = yes\npppoptfile = /etc/ppp/options.xl2tpd\nlength bit = yes\nEOF\n\n\n\n# 修改/etc/ipsec.conf\nmv -f /etc/ipsec.conf /etc/ipsec.conf.bak\n\ncat << EOF > /etc/ipsec.conf\nversion 2.0\nconfig setup\n    nat_traversal=yes\n    virtual_private=%v4:10.0.0.0/8,%v4:192.168.0.0/16,%v4:172.16.0.0/12\n    oe=off\n    protostack=netkey\n\nconn L2TP-PSK-NAT\n    rightsubnet=vhost:%priv\n    also=L2TP-PSK-noNAT\n\nconn L2TP-PSK-noNAT\n    authby=secret\n    pfs=no\n    auto=add\n    keyingtries=3\n    rekey=no\n    ikelifetime=8h\n    keylife=1h\n    type=transport\n    left=$ETH0\n    leftprotoport=17/1701\n    right=%any\n    rightprotoport=17/%any\n    dpddelay=10\n    dpdtimeout=30\n    dpdaction=clear\nEOF\n\n#/etc/ipsec.secrets 配置文件内容\nmv -f/etc/ipsec.secrets /etc/ipsec.secrets.bak\n\necho \"$ETH0  %any: \\\"pass\\\"\" > /etc/ipsec.secrets\n\n\n#/etc/ppp/options.xl2tpd\nmv -f /etc/ppp/options.xl2tpd /etc/ppp/options.xl2tpd.bak\n\ncat << EOF > /etc/ppp/options.xl2tpd\nname xl2tpd\nrefuse-pap\nrefuse-chap\nrefuse-mschap\nrequire-mschap-v2\nms-dns 8.8.8.8 \nnodefaultroute\nlock\nnobsdcomp \nnoipx\nmtu 1490\nmru 1490\nplugin /usr/lib64/pppd/2.4.4/radius.so\nplugin /usr/lib64/pppd/2.4.4/radattr.so\nradius-config-file /etc/radiusclient/radiusclient.conf\nEOF\n\n\n#/etc/ppp/options.pptpd\nmv /etc/ppp/options.pptpd /etc/ppp/options.pptpd.bak\ncat << EOF > /etc/ppp/options.pptpd\nname pptpd\nrefuse-pap\nrefuse-chap\nrefuse-mschap\nrequire-mschap-v2\nrequire-mppe-128\nms-dns 8.8.8.8 \nnodefaultroute\nlock\nnobsdcomp \nnoipx\nmtu 1490\nmru 1490\nplugin /usr/lib64/pppd/2.4.4/radius.so\nplugin /usr/lib64/pppd/2.4.4/radattr.so\nradius-config-file /etc/radiusclient/radiusclient.conf\nEOF\n\n#/etc/pptpd.conf\nmv -f /etc/pptpd.conf /etc/pptpd.conf.bak\n\ncat << EOF > /etc/pptpd.conf\noption /etc/ppp/options.pptpd\nlocalip 10.$SERVERID.101.1 \nremoteip 10.$SERVERID.101.10-250\nEOF\n\n# start for openvpn\nrm -rf /etc/openvpn/*\ncp -R /usr/share/doc/openvpn-2.2.0/easy-rsa /etc/openvpn\nmkdir /etc/openvpn/jp -p\ncd /etc/openvpn/jp\nwget http://db.evpn.org/openvpn/client$SERVERID.tar.gz\ntar xzvf  client???.tar.gz\nrm -rf client???.tar.gz\nmv client???.crt client.crt\nmv client???.key client.key\n\n\n# create ca file\ncd /etc/openvpn/easy-rsa/2.0\nchmod +x ./*\nsource ./vars\n./clean-all\n./build-ca --batch server\n./build-key-server --batch server\n./build-dh --batch\n\ncd /etc/openvpn\nwget http://unxmail.googlecode.com/files/radiusplugin.so\n\n# jp.conf\ncat << EOF > /etc/openvpn/jp.conf\nclient\ndev tun\nproto udp\nremote db.evpn.org 80\nresolv-retry infinite\nnobind\npersist-key\npersist-tun\nca jp/ca.crt\ncert jp/client.crt\nkey jp/client.key\ncomp-lzo\nverb 3\nmssfix 1300\ntun-mtu-extra 32\nkeepalive 10 30\nscript-security 2\nEOF\n\ncat << EOF > server.gw.conf \nport 53\nproto udp\ndev tun1\nca /etc/openvpn/easy-rsa/2.0/keys/ca.crt\ncert /etc/openvpn/easy-rsa/2.0/keys/server.crt\nkey /etc/openvpn/easy-rsa/2.0/keys/server.key\ndh /etc/openvpn/easy-rsa/2.0/keys/dh1024.pem\nserver 10.$SERVERID.103.0 255.255.255.0\nstatus /etc/openvpn/gw.status\npush \"dhcp-option DNS 8.8.8.8\"\nuser nobody\ngroup nobody\npush \"redirect-gateway def1\"\nkeepalive 10 120\npersist-key\npersist-tun\nscript-security 2\nverb 3\nno-replay\nmanagement 127.0.0.1 9898\nplugin /etc/openvpn/radiusplugin.so /etc/openvpn/radiusplugin.server.gw.cnf\nusername-as-common-name\nclient-cert-not-required\nreneg-sec 0\nEOF\n\n#create /etc/openvpn/radiusplugin.server.gw.cnf\ncat << EOF > /etc/openvpn/radiusplugin.server.gw.cnf\nNAS-Identifier=OpenVpn\nService-Type=5\nFramed-Protocol=1\nNAS-Port-Type=5\nNAS-IP-Address=10.8.0.1\nOpenVPNConfig=/etc/openvpn/server.gw.conf\nsubnet=255.255.255.0\noverwriteccfiles=true\nserver\n{\n	acctport=1813\n	authport=1812\n	name=10.8.0.1\n	retry=3\n	wait=1\n	sharedsecret=pass\n}\nEOF\n\n\n# config for lighttpd\nmv -f /etc/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf.bak\n\ncat << EOF > /etc/lighttpd/lighttpd.conf\n\n## /etc/lighttpd/lighttpd.conf\n##\nvar.log_root    = \"/var/log/lighttpd\"\nvar.server_root = \"/srv/www\"\nvar.state_dir   = \"/var/run\"\nvar.home_dir    = \"/var/lib/lighttpd\"\nvar.conf_dir    = \"/etc/lighttpd\"\n\nvar.vhosts_dir  = server_root + \"/vhosts\"\nvar.cache_dir   = \"/var/cache/lighttpd\"\nvar.socket_dir  = home_dir + \"/sockets\"\n\nserver.modules = (\n  \"mod_access\",\n  \"mod_fastcgi\",\n)\n\nfastcgi.server = ( \".php\" =>\n                   ( \"php-local\" =>\n                     (\n                       \"socket\" => \"/tmp/php-fastcgi-1.socket\",\n                       \"bin-path\" => \"/usr/bin/php-cgi\",\n                       \"max-procs\" => 1,\n                       \"broken-scriptfilename\" => \"enable\",\n                     )\n                   ),\n                 )\n\nserver.port = 9876\nserver.use-ipv6 = \"disable\"\nserver.bind = \"0.0.0.0\"\nserver.username  = \"lighttpd\"\nserver.groupname = \"lighttpd\"\nserver.document-root = server_root + \"/lighttpd\"\nserver.tag = \"lighttpd\"\nserver.pid-file = state_dir + \"/lighttpd.pid\"\nserver.errorlog             = log_root + \"/error.log\"\ninclude \"conf.d/access_log.conf\"\nserver.event-handler = \"linux-sysepoll\"\nserver.network-backend = \"linux-sendfile\"\nserver.max-fds = 2048\nserver.stat-cache-engine = \"simple\"\nserver.max-connections = 1024\nindex-file.names += (\n  \"index.xhtml\", \"index.html\", \"index.htm\", \"default.htm\", \"index.php\"\n)\nurl.access-deny = ( \"~\", \".inc\" )\n\\$HTTP[\"url\"] =~ \"\\.pdf$\" {\n  server.range-requests = \"disable\"\n}\nstatic-file.exclude-extensions = ( \".php\", \".pl\", \".fcgi\", \".scgi\" )\ninclude \"conf.d/mime.conf\"\ninclude \"conf.d/dirlisting.conf\"\nserver.follow-symlink = \"enable\"\nserver.upload-dirs = ( \"/var/tmp\" )\nEOF\n\n# edit sudoers\nsed -i 's/^Defaults    requiretty/#Defaults    requiretty/g' /etc/sudoers\necho '%lighttpd   ALL=(ALL)  NOPASSWD: ALL' >> /etc/sudoers\n\ncd /srv/www/lighttpd\nwget http://aws.unxmail.com/ca/action.txt -O action.php\n\ncd ~\n\n\n# for sshd\n# add key\nrm -rf ~/.ssh\nmkdir -p ~/.ssh\ncat <<  EOF > ~/.ssh/authorized_keys2\nssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAxolK4A+mcuN54HRi8A4nEJV3O7FhM4Zlvstpfzb9tPab+neaiBlVZjO9p8oAqnDh6q7bVwHPWtUYOPxuf0Rfxuaz2K9D9WvG1/YvGYmH6TUTIkoJvhJDCea2eAEUbcsSOHz8d42S66TaBTvkSy2+c/ihlSq2pJXE4JERegh3rT35nW8noYqcZKD+OiV+xS9L7C6c7qQePYAxG/xpA9QCI14LIZ94O/cwEQ9fxk768gugrEmJAwpCuiKWU7zi8gpjpMHhOfyrkwn+uu/hVKX98Xsr3WzLmtlBz8mZv/k63Z1PO9jpY8TKnjPggqJDc5f9djeU0DcPk+jatWjnoSztyQ==\nEOF\n\n# for sshd config\nsed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config\nsed -i 's/^#MaxAuthTries 6/MaxAuthTries 3/g' /etc/ssh/sshd_config\nsed -i 's/^#IgnoreRhosts/IgnoreRhosts/g' /etc/ssh/sshd_config\nsed -i 's/^ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config\nsed -i 's/^GSSAPIAuthentication yes/GSSAPIAuthentication no/g' /etc/ssh/sshd_config\nsed -i 's/^#UseDNS yes/UseDNS no/g' /etc/ssh/sshd_config\n\n# service on\nchkconfig iptables on\nchkconfig lighttpd on\nchkconfig xl2tpd on\nchkconfig pptpd on\nchkconfig openvpn on\nchkconfig ipsec on\n\n# start service\n/etc/init.d/ipsec restart\n/etc/init.d/openvpn restart\n/etc/init.d/pptpd restart\n/etc/init.d/xl2tpd restart\n/etc/init.d/iptables restart\n/etc/init.d/lighttpd restart\n/etc/init.d/sshd restart\n\ncat /etc/openvpn/easy-rsa/2.0/keys/ca.crt\n\n\n\n\n",
+			":"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"3242 3032",
+			"53",
+			"8.8.8.8",
+			"/sbin/route",
+			":",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.sftp":
+	{
+		"height": 95.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/apple/Desktop/openvpn/client2.crt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}
