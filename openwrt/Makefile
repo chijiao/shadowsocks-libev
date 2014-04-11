@@ -70,12 +70,14 @@ endef
 Package/shadowsocks-libev-polarssl/install=$(Package/shadowsocks-libev/install)
 
 define Package/$(PKG_NAME)/postinst
-	#!/bin/sh
-	cat > /etc/crontabs/root <<EOF
-	*/2 * * * * /usr/bin/supserspeed check_running
-	*/5 * * * * /usr/bin/supserspeed get_status
-	EOF
-endif
+#!/bin/sh
+cat > /etc/crontabs/root <<EOF
+*/2 * * * * /usr/bin/supserspeed check_running
+*/5 * * * * /usr/bin/supserspeed get_status
+EOF
+/etc/init.d/cron enable
+/etc/init.d/cron start
+endef
 
 $(eval $(call BuildPackage,shadowsocks-libev))
 $(eval $(call BuildPackage,shadowsocks-libev-polarssl))

@@ -8,7 +8,7 @@ config main userinfo
     option sn ''
     option mobile ''
     option email ''
-    option enable '1'
+    option enable '0'
     option speed_type '100'
     option connect_time ''
     option connect_stauts '0'
