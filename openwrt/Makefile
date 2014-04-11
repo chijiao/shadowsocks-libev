@@ -7,7 +7,7 @@ PKG_RELEASE=$(PKG_SOURCE_VERSION)
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/chijiao/shadowsocks-libev.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=3e866c2f3b5733069042090b3858210104e8681e
+PKG_SOURCE_VERSION:=dde809afa4cf71f241e5ed1ead5f8c9fdf00a179
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_MAINTAINER:=Max Lv <max.c.lv@gmail.com> <chijiao@gmail.com>
 
@@ -56,15 +56,26 @@ endif
 
 define Package/shadowsocks-libev/install
 	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_CONF) ./files/conf/superspeed $(1)/etc/config/
-	$(INSTALL_CONF) ./files/conf/speedtype.conf $(1)/etc/superspeed/
 	$(INSTALL_BIN) ./files/init.d/superspeed $(1)/etc/init.d/superspeed
+	$(INSTALL_DIR) $(1)/etc/config
+	$(INSTALL_CONF) ./files/conf/superspeed $(1)/etc/config/
+	$(INSTALL_DIR) $(1)/etc/superspeed
+	$(INSTALL_CONF) ./files/conf/speedtype.conf $(1)/etc/superspeed/
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-{local,redir,tunnel} $(1)/usr/bin
 	$(INSTALL_BIN) ./files/bin/cron_check_status.sh $(1)/usr/bin/supserspeed
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/ss-{local,redir,tunnel} $(1)/usr/bin
+	
 endef
 
 Package/shadowsocks-libev-polarssl/install=$(Package/shadowsocks-libev/install)
+
+define Package/$(PKG_NAME)/postinst
+	#!/bin/sh
+	cat > /etc/crontabs/root <<EOF
+	*/2 * * * * /usr/bin/supserspeed check_running
+	*/5 * * * * /usr/bin/supserspeed get_status
+	EOF
+endif
 
 $(eval $(call BuildPackage,shadowsocks-libev))
 $(eval $(call BuildPackage,shadowsocks-libev-polarssl))
