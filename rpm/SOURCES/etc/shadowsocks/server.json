@@ -4,6 +4,5 @@
     "local_port": 8080,
     "timeout":600,
     "method":"aes-256-cfb",
-    "password":"123456",
-    "username":"abcdef"
+    "password":"123456"
 }
